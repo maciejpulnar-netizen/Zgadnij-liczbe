@@ -6,6 +6,7 @@ def generuj_haslo(dlugosc=12):
     haslo = ''.join(random.choice(znaki) for i in range(dlugosc))
     return haslo
 
-print('--- GENERATOR HASEL ---')
+print('--- GENERATOR 5 HASIEL ---')
 dl = int(input('Jak dlugie ma byc haslo? '))
-print(f'Twoje bezpieczne haslo to: {generuj_haslo(dl)}')
+for i in range(5):
+    print(f'{i+1}. {generuj_haslo(dl)}')
